@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDFB3DAC-5BD9-4A0D-9719-18B47B0CBA49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project_start</RootNamespace>
+    <AssemblyName>project start</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\Check.cs" />
+    <Compile Include="BusinessLayer\Departments.cs" />
+    <Compile Include="BusinessLayer\LoginLlogic.cs" />
+    <Compile Include="BusinessLayer\PlayerInfo.cs" />
+    <Compile Include="BusinessLayer\TeamInfo.cs" />
+    <Compile Include="BusinessLayer\UserInfo.cs" />
+    <Compile Include="DataAccessLayer\DataAcesslogic.cs" />
+    <Compile Include="LoginDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Add11palyerteam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Add11palyerteam.Designer.cs">
+      <DependentUpon>Add11palyerteam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Addbadmentionteam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Addbadmentionteam.Designer.cs">
+      <DependentUpon>Addbadmentionteam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddChessTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddChessTeam.Designer.cs">
+      <DependentUpon>AddChessTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddFootballTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddFootballTeam.Designer.cs">
+      <DependentUpon>AddFootballTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddLudoTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddLudoTeam.Designer.cs">
+      <DependentUpon>AddLudoTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Addtabletanessteam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Addtabletanessteam.Designer.cs">
+      <DependentUpon>Addtabletanessteam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddTeamm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\AddTeamm.Designer.cs">
+      <DependentUpon>AddTeamm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationtationLayer\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationtationLayer\Add11palyerteam.resx">
+      <DependentUpon>Add11palyerteam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\Addbadmentionteam.resx">
+      <DependentUpon>Addbadmentionteam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\AddChessTeam.resx">
+      <DependentUpon>AddChessTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\AddFootballTeam.resx">
+      <DependentUpon>AddFootballTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\AddLudoTeam.resx">
+      <DependentUpon>AddLudoTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\Addtabletanessteam.resx">
+      <DependentUpon>Addtabletanessteam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\AddTeamm.resx">
+      <DependentUpon>AddTeamm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationtationLayer\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="LoginDataDataSet.xsc">
+      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet.xss">
+      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet1.xsc">
+      <DependentUpon>LoginDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet1.xss">
+      <DependentUpon>LoginDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet2.xsc">
+      <DependentUpon>LoginDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet2.xss">
+      <DependentUpon>LoginDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet3.xsc">
+      <DependentUpon>LoginDataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet3.xss">
+      <DependentUpon>LoginDataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet4.xsc">
+      <DependentUpon>LoginDataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet4.xss">
+      <DependentUpon>LoginDataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet5.xsc">
+      <DependentUpon>LoginDataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet5.xss">
+      <DependentUpon>LoginDataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet6.xsc">
+      <DependentUpon>LoginDataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet6.xss">
+      <DependentUpon>LoginDataDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet7.xsc">
+      <DependentUpon>LoginDataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataDataSet7.xss">
+      <DependentUpon>LoginDataDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-Badminton-Wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11568_block-notes-product-on-white.jpg" />
+    <None Include="Resources\landing_bg.jpg" />
+    <None Include="Resources\11568_block-notes-product-on-white1.jpg" />
+    <None Include="Resources\P5.jpg" />
+    <None Include="Resources\badminton-08.jpg" />
+    <None Include="Resources\Tennis_Ping_Pong_Table_Clipart-9LG.gif" />
+    <None Include="Resources\1301577_110121115855_100_0888.JPG" />
+    <None Include="Resources\board-game-ludo-mensch.png" />
+    <None Include="Resources\cricket-Challenge-game-for-all-play-live-Cricket-Game-watch-live-Cricket.jpg" />
+    <None Include="Resources\images %281%291.jpg" />
+    <None Include="Resources\13183222_1884627701764163_1682483114_n.jpg" />
+    <None Include="Resources\13149934_1884628275097439_1975141112_n.jpg" />
+    <None Include="Resources\13153351_1884624065097860_1471330303_n.jpg" />
+    <None Include="Resources\13162476_1884624068431193_812734873_n.jpg" />
+    <None Include="Resources\13214672_1885740158319584_1532423104_o.jpg" />
+    <None Include="Resources\13224281_1885740328319567_1050654075_o.jpg" />
+    <None Include="Resources\13214648_1885740211652912_1606159790_o %281%29.jpg" />
+    <None Include="Resources\13181122_1885738188319781_369118288_n.jpg" />
+    <None Include="Resources\backjj.jpg" />
+    <None Include="Resources\download1.jpg" />
+    <Content Include="LoginData.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LoginData_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>LoginData.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\images %284%29.jpg" />
+    <None Include="Resources\cricket-batsman-in-playing-action-on-blue-background_132332540.jpg" />
+    <None Include="Resources\crick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
